@@ -9,7 +9,7 @@ const QuizAnswer = ({ questions }) => {
     if (correctAnswer === props) {
       Swal.fire({
         icon: 'success',
-        title: 'Greate...',
+        title: 'Great...',
         text: 'Correct answer!',
       });
     } else {
@@ -23,17 +23,17 @@ const QuizAnswer = ({ questions }) => {
 
   return (
     <div className=" m-6  bg-slate-50  lg:p-16">
-      <h5 className="mb-2 text-4xl font-bold  mb-16 tracking-tight  dark:text-white">
+      <h5 className="mb-2 text-4xl font-bold  mb-16 tracking-tight  text-red-400">
         {' '}
         {question}{' '}
       </h5>{' '}
-      <div className="  bg-slate-50">
+      <div className="  bg-gray-50">
         {' '}
         {options.map((optionquestions) => (
           <div className="flex justify-center ">
             <button
               onClick={() => handleanswer(optionquestions)}
-              className="ml-2 flex  justify-center hover:bg-sky-500 bg-blue-400 w-2/4 rounded-md  p-8 mb-4 text-3xl text-sm font-medium text-black dark:text-gray-300"
+              className="ml-2 flex  justify-center hover:bg-sky-500 bg-blue-400 w-2/4 rounded-md  p-8 mb-4 text-3xl text-sm font-medium text-black text-black-200"
             >
               {optionquestions}{' '}
             </button>{' '}
@@ -48,7 +48,7 @@ const QuizAnswer = ({ questions }) => {
       <h2
         className={`ml-2 mt-5 text-3xl font-medium text-gray-900 ${
           answer ? answer : 'hidden'
-        } dark:text-gray-300`}
+        } text-green-500`}
       >
         Correct answer: {correctAnswer}{' '}
       </h2>{' '}
