@@ -9,15 +9,15 @@ const Header = () => {
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-24  bg-slate-200">
       <div className="relative flex items-center justify-between">
-        <Link to="/" aria-label="Lern Code" title="Lern Code" className="inline-flex items-center">
+        <Link to="/" aria-label="Web Quizz" title="Web Quizz" className="inline-flex items-center">
           <img
             className="lg:w-16 w-8 ml-3 rounded-full"
-            src={require('../../image/programming.png')}
+            src={require('../../image/programming.jpg')}
             alt=""
           />
 
           <span className="ml-2 lg:text-3xl text-2xl font-bold tracking-wide text-gray-800 uppercase">
-            Lern <span className="text-yellow-400">Code</span>
+            Web <span className="text-red-400">Quizz</span>
           </span>
         </Link>
         <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -68,14 +68,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-              aria-label="About Us"
-              title="About Us"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 text-2xl text-bold "
-            >
-              About Us
-            </Link>
+            
           </li>
         </ul>
         <div className="lg:hidden">
